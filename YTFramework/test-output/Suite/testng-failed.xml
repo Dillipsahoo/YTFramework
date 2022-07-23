@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Command line test a22d6844-c06a-47cb-95ce-87e30270d6aa(failed)">
+    <classes>
+      <class name="org.testing.TestScripts.TC2">
+        <methods>
+          <include name="YTBestsongs"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC2 -->
+    </classes>
+  </test> <!-- Command line test a22d6844-c06a-47cb-95ce-87e30270d6aa(failed) -->
+</suite> <!-- Failed suite [Suite] -->
