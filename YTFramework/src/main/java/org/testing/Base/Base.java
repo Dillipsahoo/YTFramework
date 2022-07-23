@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Base {
 
 public ChromeDriver driver;
@@ -20,7 +22,7 @@ public Properties pr;
 	public void openBrowser() throws InterruptedException, IOException
 	{
 	
-		System.setProperty("webdriver.chrome.driver", "..//YTFramework/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions(); 
 		driver = new ChromeDriver(options); 
 		options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
